@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial
+        }
+
+        /* Page content */
+        iframe {
+            height: 50%;
+            width: 50%;
+        }
+    </style>
+    <script>
+            function setSiteYt() {
+                iframe=document.getElementsByTagName("iframe")[0];
+                iframe.setAttribute("src","https://www.youtube.com/");
+            }
+            function setSiteFb() {
+                iframe=document.getElementsByTagName("iframe")[0];
+                iframe.setAttribute("src","https://www.facebook.com/");
+            }
+            function setSiteWiki() {
+                iframe=document.getElementsByTagName("iframe")[0];
+                iframe.setAttribute("src","https://www.wikipedia.org/");
+            }
+        </script>
+</head>
+
+<body>
+    <h3>My First sub-window</h3>
+    <div>
+    <iframe src="https://www.wikipedia.org/"></iframe>
+    </div>
+    <div>
+    <button onclick ="setSiteYt()" value="youtube">Youtube</button>
+    <button onclick ="setSiteFb()" value="facebook">Facebook</button>
+    <button onclick ="setSiteWiki()" value="wikipedia">Wikipedia</button>
+    </div>
+
+</body>
+
+
+</html>
